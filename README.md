@@ -1,3 +1,2 @@
-# git-prac
+# practice
 
-연습
