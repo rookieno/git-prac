@@ -1,0 +1,134 @@
+* {
+    font-family: 'Dongle', sans-serif;
+}
+
+.test-form {
+    width:32vw;
+    height:80vh;
+    margin:8vh auto;
+    border-radius:5%;
+    overflow: hidden;
+    background: url("../static/img/background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 3px 3px 10px lightgray;
+}
+
+.test-title {
+    width:100%;
+    height:12%;
+    margin: 2vh auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-box {
+    width:60%;
+    height:60%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.monster-ball {
+    width:15%;
+    height:100%;
+    background: url("../static/img/pokeball.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.title {
+    font-size: 3vw;
+}
+
+.test-subtitle {
+    width:70%;
+    height:10%;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+}
+
+.image-area {
+    width:70%;
+    height:52%;
+    margin:2vh auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px gray;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-area-text {
+    font-size:2rem;
+}
+
+.button-area {
+    width:24%;
+    height:7%;
+    padding:2%;
+    margin:auto;
+    background: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:10px;
+    box-shadow: 2px 2px 3px gray;
+    cursor: pointer;
+}
+
+#bt-exe-hover {
+    display:none;
+}
+
+.button-area:hover #bt-exe-original{
+    display:none;
+}
+
+.button-area:hover #bt-exe-hover {
+    display:flex;
+}
+
+#button-1 {
+    width:10vw;
+    height:8vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#button-img-1 {
+    width:5vw;
+    height:5vh;
+    border-radius:100%;
+    overflow: hidden;
+}
+
+#button-img-1 img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.waiting {
+    width:18vw;
+    height:46vh;
+    background: url("../static/img/waiting.gif");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin:auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size:3rem;
+}

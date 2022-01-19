@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pokemon test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="../static/result_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="test-form">
+        <div class="test-title">
+            <div class="title-box">
+                <div class="monster-ball"></div>
+                <div class="title">포켓몬상 테스트</div>
+                <div class="monster-ball"></div>
+            </div>
+        </div>
+
+        <div class="result-container">
+            <div class="result">
+                <div id="prof-img"></div>
+                <div class="desc">흠.. 어디보자... 이 사진과 가장 닮은 포켓몬은<br>{{ percent }}확률로 {{ name }}로군!</div>
+            </div>
+            <div class="result-image">
+                <img src="{{ path }}">
+            </div>
+            <div class="result-button">
+                <div class="return-button" onclick="backhome()">
+                    <div id="button-2">돌아가기</div>
+                    <div id="button-img-2"><img src="../static/img/return.jpg" id="bt-return-original"><img src="../static/img/hydro.gif" id="bt-return-hover"></div>
+                </div>
+                <div class="share-button">
+                    <div id="button-3">공유하기</div>
+                    <div id="button-img-3"><img src="../static/img/share.png" id="bt-share-original"><img src="../static/img/flame.gif" id="bt-share-hover"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    function backhome() {
+        location.replace('/')
+    }
+</script>
+
+</html>
